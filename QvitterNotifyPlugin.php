@@ -27,7 +27,7 @@ class QvitterNotifyPlugin extends Plugin{
 			if(document.getElementById("unseen-notifications") === 'undefined' || document.getElementById("unseen-notifications") === null){
 				return;
 			}
-			var nPush = document.getElementById("unseen-notifications").innerHTML;;
+			var nPush = document.getElementById("unseen-notifications").innerHTML;
 			if(hold == nPush){
 				//console.log("No notifications...");
 				return;
