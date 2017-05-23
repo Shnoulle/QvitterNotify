@@ -24,7 +24,7 @@ class QvitterNotifyPlugin extends Plugin{
 			if(!Push.Permission.has()){
 				Push.Permission.request();
 			}
-			if(document.getElementById("unseen-notifications") === 'undefined' || document.getElementById("unseen-notifications") === null){
+			if(document.getElementById("unseen-notifications") === 'undefined' || document.getElementById("unseen-notifications") === null || document.getElementById("unseen-notifications") == ''){
 				return;
 			}
 			var nPush = document.getElementById("unseen-notifications").innerHTML;
